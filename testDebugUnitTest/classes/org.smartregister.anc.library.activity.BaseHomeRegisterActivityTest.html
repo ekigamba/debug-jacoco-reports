@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">19.806s</div>
+<div class="counter">19.679s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,17 +76,12 @@
 <a name="testStartFormActivityInvokesPresenterStartFormMethodWithCorrectParameters"></a>
 <h3 class="failures">testStartFormActivityInvokesPresenterStartFormMethodWithCorrectParameters</h3>
 <span class="code">
-<pre>Wanted but not invoked:
-registerPresenter.startForm(
-    &quot;teststring&quot;,
-    &quot;teststring&quot;,
-    &quot;teststring&quot;,
-    &quot;&quot;
-);
--&gt; at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.testStartFormActivityInvokesPresenterStartFormMethodWithCorrectParameters(BaseHomeRegisterActivityTest.java:216)
-Actually, there were zero interactions with this mock.
-
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.testStartFormActivityInvokesPresenterStartFormMethodWithCorrectParameters(BaseHomeRegisterActivityTest.java:216)
+<pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertNotNull(Assert.java:256)
+	at junit.framework.Assert.assertNotNull(Assert.java:248)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.testStartFormActivityInvokesPresenterStartFormMethodWithCorrectParameters(BaseHomeRegisterActivityTest.java:217)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,17 +138,12 @@ Actually, there were zero interactions with this mock.
 <a name="testStartRegistrationFormActivityInvokesPresenterStartFormMethodWithCorrectParameters"></a>
 <h3 class="failures">testStartRegistrationFormActivityInvokesPresenterStartFormMethodWithCorrectParameters</h3>
 <span class="code">
-<pre>Wanted but not invoked:
-registerPresenter.startForm(
-    &quot;anc_register&quot;,
-    null,
-    null,
-    &quot;&quot;
-);
--&gt; at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.testStartRegistrationFormActivityInvokesPresenterStartFormMethodWithCorrectParameters(BaseHomeRegisterActivityTest.java:229)
-Actually, there were zero interactions with this mock.
-
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.testStartRegistrationFormActivityInvokesPresenterStartFormMethodWithCorrectParameters(BaseHomeRegisterActivityTest.java:229)
+<pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertNotNull(Assert.java:256)
+	at junit.framework.Assert.assertNotNull(Assert.java:248)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.testStartRegistrationFormActivityInvokesPresenterStartFormMethodWithCorrectParameters(BaseHomeRegisterActivityTest.java:242)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -219,32 +209,32 @@ Actually, there were zero interactions with this mock.
 </thead>
 <tr>
 <td class="success">testActivityCreatedSuccesfully</td>
-<td class="success">1.179s</td>
+<td class="success">1.115s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetContextReturnsCorrectActivityInstance</td>
-<td class="success">1.569s</td>
+<td class="success">1.226s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetOtherFragmentsShouldReturnCorrectInstances</td>
-<td class="success">1.138s</td>
+<td class="success">1.167s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetRegisterFragmentShouldReturnAValidInstance</td>
-<td class="success">1.148s</td>
+<td class="success">1.151s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetViewIdentifiersReturnsCorrectIdentifierValues</td>
-<td class="success">1.279s</td>
+<td class="success">1.205s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testHomeRegisterActivityOnBackPressedCalled</td>
-<td class="success">1.212s</td>
+<td class="success">1.272s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -254,42 +244,42 @@ Actually, there were zero interactions with this mock.
 </tr>
 <tr>
 <td class="success">testRemovePatientHandlerShouldInvokeCorrectMethods</td>
-<td class="success">1.292s</td>
+<td class="success">1.232s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testShowProgressDialogHandlerInvokesShowProgressDialogWithCorrectTitle</td>
-<td class="success">1.704s</td>
+<td class="success">1.569s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testShowRecordBirthPopUpInvokesMethodsOnRecordBirthAlertDialogsCorrectly</td>
-<td class="success">1.349s</td>
+<td class="success">1.391s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testStartFormActivityDisplaysErrorMessageToastWhenExceptionThrown</td>
-<td class="success">1.261s</td>
+<td class="success">1.296s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">testStartFormActivityInvokesPresenterStartFormMethodWithCorrectParameters</td>
-<td class="failures">1.202s</td>
+<td class="failures">1.165s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testStartRegistrationFormActivityInvokesPresenterStartFormMethodWithCorrectParameters</td>
-<td class="failures">1.583s</td>
+<td class="failures">1.727s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">testSwitchToAdvancedSearchFromBarcode</td>
-<td class="success">1.619s</td>
+<td class="success">1.794s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUpdateSortAndFilterShouldInvokeCorrectMethods</td>
-<td class="success">1.149s</td>
+<td class="success">1.247s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -827,7 +817,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -879,7 +869,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -931,7 +921,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -983,7 +973,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1035,7 +1025,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1087,8 +1077,8 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting clas
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	at org.smartregister.util.Utils.getDuration(Utils.java:609)
 	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity.showRecordBirthPopUp(BaseHomeRegisterActivity.java:349)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1161289606.showRecordBirthPopUp$accessor$tokkayrJ(Unknown Source)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1161289606$auxiliary$8H4g4lcD.call(Unknown Source)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1184939104.showRecordBirthPopUp$accessor$5E3U8GWH(Unknown Source)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1184939104$auxiliary$pNI0zQ2u.call(Unknown Source)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation$SuperMethod$FromCallable.invoke(InterceptedInvocation.java:195)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:131)
 	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:43)
@@ -1099,8 +1089,8 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting clas
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:57)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:43)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:119)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1161289606.showRecordBirthPopUp(Unknown Source)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.testShowRecordBirthPopUpInvokesMethodsOnRecordBirthAlertDialogsCorrectly(BaseHomeRegisterActivityTest.java:186)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1184939104.showRecordBirthPopUp(Unknown Source)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.testShowRecordBirthPopUpInvokesMethodsOnRecordBirthAlertDialogsCorrectly(BaseHomeRegisterActivityTest.java:189)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1181,8 +1171,8 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting clas
 	at org.smartregister.util.DateUtil.&lt;clinit&gt;(DateUtil.java:24)
 	at org.smartregister.util.Utils.getDuration(Utils.java:609)
 	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity.showRecordBirthPopUp(BaseHomeRegisterActivity.java:349)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1161289606.showRecordBirthPopUp$accessor$tokkayrJ(Unknown Source)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1161289606$auxiliary$8H4g4lcD.call(Unknown Source)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1184939104.showRecordBirthPopUp$accessor$5E3U8GWH(Unknown Source)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1184939104$auxiliary$pNI0zQ2u.call(Unknown Source)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation$SuperMethod$FromCallable.invoke(InterceptedInvocation.java:195)
 	at org.mockito.internal.creation.bytebuddy.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:131)
 	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:43)
@@ -1193,8 +1183,8 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting clas
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:57)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:43)
 	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:119)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1161289606.showRecordBirthPopUp(Unknown Source)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.testShowRecordBirthPopUpInvokesMethodsOnRecordBirthAlertDialogsCorrectly(BaseHomeRegisterActivityTest.java:186)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivity$MockitoMock$1184939104.showRecordBirthPopUp(Unknown Source)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.testShowRecordBirthPopUpInvokesMethodsOnRecordBirthAlertDialogsCorrectly(BaseHomeRegisterActivityTest.java:189)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1274,7 +1264,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1326,7 +1316,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1378,7 +1368,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1430,7 +1420,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1482,7 +1472,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1534,7 +1524,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1586,7 +1576,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1638,7 +1628,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1690,7 +1680,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1742,7 +1732,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.stop(ActivityController.java:157)
 	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
-	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:80)
+	at org.smartregister.anc.library.activity.BaseHomeRegisterActivityTest.tearDown(BaseHomeRegisterActivityTest.java:83)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1790,7 +1780,7 @@ java.lang.IllegalStateException:  Instance does not exist!!! Call org.smartregis
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.1</a> at Jul 31, 2019 10:52:09 AM</p>
+<a href="http://www.gradle.org">Gradle 4.10.1</a> at Jul 31, 2019 12:48:43 PM</p>
 </div>
 </div>
 </body>
