@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.573s</div>
+<div class="counter">0.415s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">testAddClientInvokesRepositoryAddOrUpdateClientWithCorrectParams</td>
-<td class="success">0.311s</td>
+<td class="success">0.253s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testAddEventInvokesRepositoryAddEventWithCorrectParams</td>
-<td class="success">0.034s</td>
+<td class="success">0.019s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,17 +94,17 @@
 </tr>
 <tr>
 <td class="success">testAllEventsInvokesRepositoryFetchEventClientsWithCorrectParams</td>
-<td class="success">0.027s</td>
+<td class="success">0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testBatchInsertClientsInvokesRepositoryBatchInsertClientsWithCorrectParams</td>
-<td class="success">0.013s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testBatchInsertEventsInvokesRepositoryBatchInsertEventsWithCorrectParams</td>
-<td class="success">0.019s</td>
+<td class="success">0.010s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -114,12 +114,12 @@
 </tr>
 <tr>
 <td class="success">testBatchSaveInvokesBatchInsertEventsWithCorrectParams</td>
-<td class="success">0.014s</td>
+<td class="success">0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testConvertToJsonInvokesRepositoryConvertToJsonWithCorrectParams</td>
-<td class="success">0.035s</td>
+<td class="success">0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -129,7 +129,7 @@
 </tr>
 <tr>
 <td class="success">testDeleteEventsByBaseEntityIdInvokesRepositoryDeleteEventsByBaseEntityIdWithCorrectParams</td>
-<td class="success">0.011s</td>
+<td class="success">0.010s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -139,12 +139,12 @@
 </tr>
 <tr>
 <td class="success">testGetEventsInvokesRepositoryFetchEventClientsWithCorrectParams</td>
-<td class="success">0.026s</td>
+<td class="success">0.016s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSaveAllClientsAndEventsInvokesBatchSaveWithCorrectParams</td>
-<td class="success">0.028s</td>
+<td class="success">0.010s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -157,94 +157,7 @@
 <div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>java.lang.instrument.IllegalClassFormatException: Error while instrumenting class org/smartregister/sync/helper/ECSyncHelper.
-	at org.jacoco.agent.rt.internal_8ff85ea.CoverageTransformer.transform(CoverageTransformer.java:93)
-	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
-	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:642)
-	at org.robolectric.internal.bytecode.SandboxClassLoader.maybeInstrumentClass(SandboxClassLoader.java:130)
-	at org.robolectric.internal.bytecode.SandboxClassLoader.lambda$findClass$0(SandboxClassLoader.java:107)
-	at org.robolectric.util.PerfStatsCollector.measure(PerfStatsCollector.java:50)
-	at org.robolectric.internal.bytecode.SandboxClassLoader.findClass(SandboxClassLoader.java:106)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:642)
-	at org.robolectric.internal.bytecode.SandboxClassLoader.maybeInstrumentClass(SandboxClassLoader.java:130)
-	at org.robolectric.internal.bytecode.SandboxClassLoader.lambda$findClass$0(SandboxClassLoader.java:107)
-	at org.robolectric.util.PerfStatsCollector.measure(PerfStatsCollector.java:50)
-	at org.robolectric.internal.bytecode.SandboxClassLoader.findClass(SandboxClassLoader.java:106)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at java.lang.Class.getDeclaredFields0(Native Method)
-	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
-	at java.lang.Class.getDeclaredFields(Class.java:1916)
-	at org.junit.runners.model.TestClass.getSortedDeclaredFields(TestClass.java:77)
-	at org.junit.runners.model.TestClass.scanAnnotatedMembers(TestClass.java:70)
-	at org.junit.runners.model.TestClass.&lt;init&gt;(TestClass.java:57)
-	at org.junit.runners.ParentRunner.createTestClass(ParentRunner.java:88)
-	at org.junit.runners.ParentRunner.&lt;init&gt;(ParentRunner.java:83)
-	at org.junit.runners.BlockJUnit4ClassRunner.&lt;init&gt;(BlockJUnit4ClassRunner.java:65)
-	at org.robolectric.internal.SandboxTestRunner$HelperTestRunner.&lt;init&gt;(SandboxTestRunner.java:306)
-	at org.robolectric.RobolectricTestRunner$HelperTestRunner.&lt;init&gt;(RobolectricTestRunner.java:550)
-	at org.robolectric.RobolectricTestRunner.getHelperTestRunner(RobolectricTestRunner.java:378)
-	at org.robolectric.internal.SandboxTestRunner$2.evaluate(SandboxTestRunner.java:230)
-	at org.robolectric.internal.SandboxTestRunner.runChild(SandboxTestRunner.java:130)
-	at org.robolectric.internal.SandboxTestRunner.runChild(SandboxTestRunner.java:42)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.robolectric.internal.SandboxTestRunner$1.evaluate(SandboxTestRunner.java:84)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor138.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at sun.reflect.GeneratedMethodAccessor137.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.io.IOException: Error while instrumenting class org/smartregister/sync/helper/ECSyncHelper.
-	at org.jacoco.agent.rt.internal_8ff85ea.core.instr.Instrumenter.instrumentError(Instrumenter.java:166)
-	at org.jacoco.agent.rt.internal_8ff85ea.core.instr.Instrumenter.instrument(Instrumenter.java:117)
-	at org.jacoco.agent.rt.internal_8ff85ea.CoverageTransformer.transform(CoverageTransformer.java:91)
-	... 70 more
-Caused by: java.lang.IllegalStateException: Class org/smartregister/sync/helper/ECSyncHelper is already instrumented.
-	at org.jacoco.agent.rt.internal_8ff85ea.core.internal.instr.InstrSupport.assertNotInstrumented(InstrSupport.java:176)
-	at org.jacoco.agent.rt.internal_8ff85ea.core.internal.instr.ClassInstrumenter.visitField(ClassInstrumenter.java:55)
-	at org.jacoco.agent.rt.internal_8ff85ea.asm.ClassVisitor.visitField(ClassVisitor.java:272)
-	at org.jacoco.agent.rt.internal_8ff85ea.asm.ClassReader.readField(ClassReader.java:783)
-	at org.jacoco.agent.rt.internal_8ff85ea.asm.ClassReader.accept(ClassReader.java:704)
-	at org.jacoco.agent.rt.internal_8ff85ea.asm.ClassReader.accept(ClassReader.java:521)
-	at org.jacoco.agent.rt.internal_8ff85ea.core.instr.Instrumenter.instrument(Instrumenter.java:90)
-	at org.jacoco.agent.rt.internal_8ff85ea.core.instr.Instrumenter.instrument(Instrumenter.java:114)
-	... 71 more
-java.lang.instrument.IllegalClassFormatException: Error while instrumenting class org/smartregister/domain/db/Client.
+<pre>java.lang.instrument.IllegalClassFormatException: Error while instrumenting class org/smartregister/domain/db/Client.
 	at org.jacoco.agent.rt.internal_8ff85ea.CoverageTransformer.transform(CoverageTransformer.java:93)
 	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
 	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
@@ -1322,7 +1235,7 @@ Caused by: java.lang.IllegalStateException: Class org/smartregister/repository/E
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.1</a> at Jul 31, 2019 12:48:43 PM</p>
+<a href="http://www.gradle.org">Gradle 4.10.1</a> at Jul 31, 2019 2:53:50 PM</p>
 </div>
 </div>
 </body>

@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">25.628s</div>
+<div class="counter">26.649s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">93%</div>
+<div class="infoBox skipped" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,82 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="testProcessPopulatesContactSummaryYamlConfigListCorrectly"></a>
-<h3 class="failures">testProcessPopulatesContactSummaryYamlConfigListCorrectly</h3>
-<span class="code">
-<pre>junit.framework.AssertionFailedError: expected:&lt;39&gt; but was:&lt;0&gt;
-	at junit.framework.Assert.fail(Assert.java:57)
-	at junit.framework.Assert.failNotEquals(Assert.java:329)
-	at junit.framework.Assert.assertEquals(Assert.java:78)
-	at junit.framework.Assert.assertEquals(Assert.java:234)
-	at junit.framework.Assert.assertEquals(Assert.java:241)
-	at org.smartregister.anc.library.activity.YamlConfigFinishActivityTest.testProcessPopulatesContactSummaryYamlConfigListCorrectly(YamlConfigFinishActivityTest.java:284)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:570)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.robolectric.internal.SandboxTestRunner$2.evaluate(SandboxTestRunner.java:253)
-	at org.robolectric.internal.SandboxTestRunner.runChild(SandboxTestRunner.java:130)
-	at org.robolectric.internal.SandboxTestRunner.runChild(SandboxTestRunner.java:42)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.robolectric.internal.SandboxTestRunner$1.evaluate(SandboxTestRunner.java:84)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor138.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at sun.reflect.GeneratedMethodAccessor137.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:745)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -148,22 +79,22 @@
 </thead>
 <tr>
 <td class="success">testActivityIsNotNull</td>
-<td class="success">1.067s</td>
+<td class="success">1.226s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testActivityStartedWithIntent</td>
-<td class="success">1.045s</td>
+<td class="success">1.094s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testAgeViewIsInitialized</td>
-<td class="success">1.204s</td>
+<td class="success">1.121s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testAncViewIsInitialized</td>
-<td class="success">1.209s</td>
+<td class="success">1.280s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -173,67 +104,67 @@
 </tr>
 <tr>
 <td class="success">testGestationAgeViewIsInitialized</td>
-<td class="success">1.144s</td>
+<td class="success">1.132s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetIntentStringInvokesGetStringExtraMethodOfIntentWithCorrectParameters</td>
-<td class="success">1.213s</td>
+<td class="success">1.359s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testNameViewIsInitialized</td>
-<td class="success">6.848s</td>
+<td class="success">7.334s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testOnDestroyShouldInvokeOnDestroyMethodOfPresenter</td>
-<td class="success">1.076s</td>
+<td class="success">1.241s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testOnOffsetChangedShouldSetCorrectValuesForCollapsingBar</td>
-<td class="success">1.086s</td>
+<td class="success">1.140s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testProcessPopulatesContactSummaryYamlConfigListCorrectly</td>
-<td class="failures">1.766s</td>
-<td class="failures">failed</td>
+<td class="success">testProcessShouldPopulateContactSummaryYamlConfigListCorrectly</td>
+<td class="success">1.264s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSaveAndFinishButtonClickedOpensContactSummarySendPage</td>
-<td class="success">1.459s</td>
+<td class="success">1.629s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSetProfileAgeShouldSetAgeViewWithCorrectContent</td>
-<td class="success">1.148s</td>
+<td class="success">1.246s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSetProfileGestatonAgeShouldSetGestationAgeViewWithCorrectContent</td>
-<td class="success">1.349s</td>
+<td class="success">1.402s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSetProfileIDShouldSetAncIdViewWithCorrectContent</td>
-<td class="success">1.433s</td>
+<td class="success">1.855s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSetProfileImageInvokesImageRenderHelperMethodsWithCorrectParameters</td>
-<td class="success">1.224s</td>
+<td class="success">1.173s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSetProfileNameShouldSetTextViewWithCorrectContent</td>
-<td class="success">1.357s</td>
+<td class="success">1.153s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>java.lang.IllegalStateException: No activity
@@ -251,7 +182,7 @@
 	at org.robolectric.shadows.ShadowLooper.runPaused(ShadowLooper.java:359)
 	at org.robolectric.android.controller.ComponentController.invokeWhilePaused(ComponentController.java:50)
 	at org.robolectric.android.controller.ActivityController.pause(ActivityController.java:146)
-	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:61)
+	at org.smartregister.anc.library.activity.BaseActivityUnitTest.destroyController(BaseActivityUnitTest.java:64)
 	at org.smartregister.anc.library.activity.YamlConfigFinishActivityTest.tearDown(YamlConfigFinishActivityTest.java:317)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
@@ -300,7 +231,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.1</a> at Jul 31, 2019 12:48:43 PM</p>
+<a href="http://www.gradle.org">Gradle 4.10.1</a> at Jul 31, 2019 2:53:50 PM</p>
 </div>
 </div>
 </body>
